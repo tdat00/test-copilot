@@ -1,0 +1,15 @@
+Prompt
+```
+add package.json file with expressjs and CalHeatmap dependencies
+```
+
+Response
+```
+GitHub Copilot
+I will add a package.json file specifying express as a dependency. CalHeatmap is only used on the frontend via CDN, so it will not be included as a Node dependency.
+
+The package.json will include express and basic project info.
+
+package.json
+A package.json file has been added with express as a dependency. CalHeatmap is loaded via CDN on the frontend and is not included as a Node dependency.
+```

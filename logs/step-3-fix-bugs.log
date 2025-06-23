@@ -1,0 +1,28 @@
+Prompts
+```
+your code has this exception, please fix
+Uncaught TypeError: Cannot read properties of undefined (reading 'timeSecond')
+at time.js:6:16
+at cal-heatmap.min.js:1:322
+at cal-heatmap.min.js:1:345
+```
+
+```
+your code now has this exception, please fix
+Uncaught (in promise) TypeError: data.forEach is not a function
+at app.js:6:10
+```
+
+
+```
+your code now can load data, no exception. But it doesn't show the graph.
+```
+
+```
+I can see svg DOM elements in the web now, but they are transparent and not visible to user. Please fix.
+```
+
+
+```
+please update to make all CalHeatmap graphs to RED
+``

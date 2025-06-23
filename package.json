@@ -1,0 +1,12 @@
+{
+  "name": "test-copilot-commits-graph",
+  "version": "1.0.0",
+  "description": "NodeJS app with GitHub-style commits graph using CalHeatmap and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

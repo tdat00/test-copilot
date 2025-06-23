@@ -1,0 +1,24 @@
+Prompt:
+```
+generate NodeJS application which have graphs similar to Github Commits Graph, show data availibility using time series from data.json
+``
+
+Response:
+```
+GitHub Copilot
+To create a Node.js application that displays a GitHub-style commits graph (calendar heatmap) using time series data from data.json, here’s what I’ll do:
+
+Set up a basic Node.js + Express server.
+Serve a static HTML page with a frontend (using a library like cal-heatmap or d3.js for the graph).
+Load data.json on the backend and expose an API endpoint to serve the data.
+The frontend fetches the data and renders the heatmap.
+I will create the following files in c:\git\FHL\test-copilot:
+
+server.js (Express server)
+public/index.html (Frontend page)
+public/app.js (Frontend JS for fetching data and rendering the graph)
+public/style.css (Basic styles)
+data.json (Sample time series data)
+Let’s start by creating these files.
+...
+```
