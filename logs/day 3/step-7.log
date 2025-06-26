@@ -1,0 +1,18 @@
+
+```
+it shows 60 records for each hour in CalHeatmap. I just want 12 records for each hour, each record represent 5 minute of data in heatmapData. You need to add custom template.
+
+it doesn't work, you need to add custom template for the subDomain
+
+no, you need to add new template function using CalHeatmap v4
+
+No. Revert your previous change. Add custom "5 minutes" template reference to this document https://cal-heatmap.com/docs/template#days-subdomain-showing-only-the-weekdays
+
+add 5minTemplate.js base on this file https://github.com/wa0x6e/cal-heatmap/blob/master/src/templates/minute.ts
+
+
+
+
+
+remove subDomain from calheatmap, change domain type to hour
+``

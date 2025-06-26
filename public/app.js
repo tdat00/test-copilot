@@ -16,11 +16,12 @@ fetch('/api/data')
         x: 'date',
         y: 'value'
       },
-      range: 7,
-      domain: { type: 'day', label: { position: 'top' } },
-      subDomain: { type: 'hour', radius: 2 },
+      range: 24,
+      domain: { type: 'hour', label: { position: 'top' } },
+      subDomain: { type: 'minute', radius: 2 },
       scale: { color: { type: 'linear', scheme: 'Reds', domain: [minValue, maxValue > minValue ? maxValue : minValue + 1] } },
       itemSelector: '#heatmap',
+      date: { start: new Date('2025-06-24T00:00:00') },
     }, [
       [Tooltip, {
         text: function(timestamp, value) {

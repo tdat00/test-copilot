@@ -1,0 +1,9 @@
+Prompt:
+```
+generate heatmapData in data.json with random value between 20 and 80, start from 2025-06-24 00:00 to 2025-06-25 07:00 with 5 minutes interval
+
+
+change "CalHeatmap" in app.js to "hour" domain with 5 minutes interval subdomain
+add start date 2025-06-24 to calHeatmap
+no, "date" should be an object with attribute "start" is date 2025-06-24
+```
