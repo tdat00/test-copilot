@@ -14,13 +14,18 @@ fetch('/api/data')
       data: {
         source: arr,
         x: 'date',
-        y: 'value',
-        type: 'json',
+        y: 'value'
       },
-      range: 12,
-      domain: { type: 'month', label: { position: 'top' } },
-      subDomain: { type: 'day', radius: 2 },
+      range: 7,
+      domain: { type: 'day', label: { position: 'top' } },
+      subDomain: { type: 'hour', radius: 2 },
       scale: { color: { type: 'linear', scheme: 'Reds', domain: [minValue, maxValue > minValue ? maxValue : minValue + 1] } },
       itemSelector: '#heatmap',
-    });
+    }, [
+      [Tooltip, {
+        text: function(timestamp, value) {
+          return new Date(timestamp).toISOString() + ': ' + value;
+        }
+      }]
+    ]);
   });

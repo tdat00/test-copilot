@@ -1,0 +1,16 @@
+Prompt:
+```
+you forgot to add cal-heatmap css file, please add
+
+generate random data for "heatmapData" array in data.json, and change "CalHeatmap" in app.js to "hour" domain
+
+
+remove subDomain in app.js
+change "CalHeatmap" in app.js to "day" domain
+update CalHeatmap to use domain "day" with range "7" and subdomain "hour"
+
+
+update all date in data.json to today, keep time as it is
+generate heatmapData in data.json with random value, start from 2025-06-24 00:00 to 2025-06-26 23:00 with 1hr interval
+``
+

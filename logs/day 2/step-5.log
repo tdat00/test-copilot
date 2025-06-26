@@ -1,0 +1,11 @@
+Prompt:
+```
+add tooltip to CalHeatmap
+you forgot to add popperjs cdn
+
+
+you add Tooltip in wrong place. Move it to next parameter in "paint" function
+text function in Tooltip has timestamp as first parameter
+rename first param of text function to "timestamp" to make it clearer
+use ISO date string in tooltip
+``
