@@ -1,0 +1,6 @@
+```
+update calHeatmap scale to scheme "Greens", domain from 0 to 60, type "diverging", symmetric "true" and pivot 40
+
+add plugin "Legend" to app.js and index.html
+update app.js to use "[[Legend]]"
+```

@@ -10,6 +10,7 @@ fetch('/api/data')
     const minValue = Math.min(...valuesArr);
     const maxValue = Math.max(...valuesArr);
     const cal = new CalHeatmap();
+    cal.addTemplates(fiveMinTemplate);
     cal.paint({
       data: {
         source: arr,
@@ -18,15 +19,16 @@ fetch('/api/data')
       },
       range: 24,
       domain: { type: 'hour', label: { position: 'top' } },
-      subDomain: { type: 'minute', radius: 2 },
-      scale: { color: { type: 'linear', scheme: 'Reds', domain: [minValue, maxValue > minValue ? maxValue : minValue + 1] } },
+      subDomain: { type: 'fiveMin' },
+      scale: { color: { type: 'diverging', scheme: 'Greens', domain: [0, 60], symmetric: true, pivot: 40 } },
       itemSelector: '#heatmap',
       date: { start: new Date('2025-06-24T00:00:00') },
     }, [
       [Tooltip, {
         text: function(timestamp, value) {
-          return new Date(timestamp).toISOString() + ': ' + value;
+          return new Date(timestamp).toISOString() + ': ' + value + ' minutes';
         }
-      }]
+      }],
+      [Legend]
     ]);
   });
