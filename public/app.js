@@ -17,7 +17,7 @@ fetch('/api/data')
         x: 'date',
         y: 'value'
       },
-      range: 24,
+      range: 12,
       domain: { type: 'hour', label: { position: 'top' } },
       subDomain: { type: 'fiveMin' },
       scale: { color: { type: 'diverging', scheme: 'Greens', domain: [0, 60], symmetric: true, pivot: 40 } },
